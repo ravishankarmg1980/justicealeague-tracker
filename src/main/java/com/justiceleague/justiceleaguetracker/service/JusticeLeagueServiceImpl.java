@@ -25,7 +25,7 @@ public class JusticeLeagueServiceImpl implements JusticeLeagueService {
     }
 
     private List<SuperHero> populateJusticeLeague() {
-        SuperHero superMan = new SuperHero("Clark Kent", Arrays.asList("Flight", "Super human strength",
+        SuperHero superMan = new SuperHero("Clark Kent_1", Arrays.asList("Flight", "Super human strength",
                 "X-ray vision"), "Metropolis");
         SuperHero flash = new SuperHero("Barry Allen", Arrays.asList("Super speed",
                 "Tapping into the speed force", "Time travel"), "Central city");
