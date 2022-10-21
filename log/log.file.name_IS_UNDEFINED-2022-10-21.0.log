@@ -1,0 +1,10 @@
+2022-10-21T15:33:57.322+05:30 INFO  [main] justiceleague-tracker JusticeLeagueTrackerControllerTest: Starting JusticeLeagueTrackerControllerTest on DESKTOP-2MJQ79M with PID 11620 (started by User in D:\Venkatesh\AWS\development\my_project\justicealeague-tracker)
+2022-10-21T15:33:57.323+05:30 INFO  [main] justiceleague-tracker JusticeLeagueTrackerControllerTest: The following profiles are active: test
+2022-10-21T15:33:59.471+05:30 INFO  [main] justiceleague-tracker JusticeLeagueTrackerControllerTest: Started JusticeLeagueTrackerControllerTest in 2.777 seconds (JVM running for 3.877)
+2022-10-21T15:33:59.864+05:30 INFO  [main] justiceleague-tracker JusticeLeagueTrackerController: Received a request to retrive the justice league
+2022-10-21T15:33:59.864+05:30 INFO  [main] justiceleague-tracker JusticeLeagueService: Received a request to get all the justice league members
+2022-10-21T15:36:41.510+05:30 INFO  [main] justiceleague-tracker JusticeLeagueTrackerApplication: Starting JusticeLeagueTrackerApplication v0.0.1-SNAPSHOT on DESKTOP-2MJQ79M with PID 20904 (D:\Venkatesh\AWS\development\my_project\justicealeague-tracker\target\justiceleague-tracker-0.0.1-SNAPSHOT.jar started by User in D:\Venkatesh\AWS\development\my_project\justicealeague-tracker)
+2022-10-21T15:36:41.510+05:30 INFO  [main] justiceleague-tracker JusticeLeagueTrackerApplication: The following profiles are active: dev
+2022-10-21T15:36:43.784+05:30 INFO  [main] justiceleague-tracker JusticeLeagueTrackerApplication: Started JusticeLeagueTrackerApplication in 3.072 seconds (JVM running for 3.592)
+2022-10-21T15:37:59.739+05:30 INFO  [http-nio-8080-exec-1] justiceleague-tracker JusticeLeagueTrackerController: Received a request to retrive the justice league
+2022-10-21T15:37:59.740+05:30 INFO  [http-nio-8080-exec-1] justiceleague-tracker JusticeLeagueService: Received a request to get all the justice league members
