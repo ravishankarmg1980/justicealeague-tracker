@@ -50,7 +50,7 @@ resource "aws_iam_policy" "web_pipeline_policy" {
             "iam:ListRoles",
             "codebuild:BatchGetBuilds",
             "codebuild:StartBuild",
-            "codebuild:*"
+            "codebuild:*",
             "codestar-connections:*",
             "iam:PassRole",
           ],
