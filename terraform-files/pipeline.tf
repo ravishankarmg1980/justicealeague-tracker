@@ -1,3 +1,8 @@
+resource "aws_codestarconnections_connection" "example" {
+  name          = "example-connection"
+  provider_type = "GitHub"
+}
+
 resource "aws_codepipeline" "static_web_pipeline" {
   name     = "static-web-pipeline"
   role_arn = aws_iam_role.pipeline_role.arn
@@ -6,13 +11,31 @@ resource "aws_codepipeline" "static_web_pipeline" {
   }
 
   artifact_store {
-    location = aws_s3_bucket.artifacts_bucket.bucket
+    location = aws_s3_bucket.artifacts _bucket.bucket
     type     = "S3"
   }
 
   stage {
     name = "Source"
 
+  #############
+    action {
+      name             = "Source"
+      category         = "Source"
+      owner            = "AWS"
+      provider         = "CodeStarSourceConnection"
+      version          = "1"
+      output_artifacts = ["SourceArtifact"]
+
+      configuration = {
+        ConnectionArn    = aws_codestarconnections_connection.example.arn
+        //FullRepositoryId = "${var.repository_owner}/${var.repository_name}"
+        FullRepositoryId = "ravishankarmg1980/justicealeague-tracker"
+        BranchName       = "master"
+      }
+    }
+  #############
+  /*
     action {
       category = "Source"
       configuration = {
@@ -33,6 +56,8 @@ resource "aws_codepipeline" "static_web_pipeline" {
       run_order = 1
       version   = "1"
     }
+  */
+
   }
 
   stage {
