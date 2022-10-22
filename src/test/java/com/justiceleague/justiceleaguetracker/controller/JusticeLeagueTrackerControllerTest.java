@@ -44,7 +44,7 @@ public class JusticeLeagueTrackerControllerTest {
     }
 
     private List<SuperHero> getJusticeLeague() {
-        SuperHero superMan = new SuperHero("Clark Kent_1", Arrays.asList("Flight", "Super human strength",
+        SuperHero superMan = new SuperHero("Clark Kent_2", Arrays.asList("Flight", "Super human strength",
                 "X-ray vision"), "Metropolis");
         SuperHero flash = new SuperHero("Barry Allen", Arrays.asList("Super speed",
                 "Tapping into the speed force", "Time travel"), "Central city");
