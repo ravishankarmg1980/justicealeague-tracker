@@ -36,7 +36,7 @@ variable "artifacts_bucket_name" {
 
 
 variable "github_token" {
-  default = "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"
+  default = "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"
 }
 
 output "web_public_url" {

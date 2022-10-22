@@ -5,14 +5,14 @@ files:
   destination: /home/ec2-user/deployments
 hooks:
   AfterInstall:
-  - location: fix_previleges.sh
+  - location: /home/ec2-user/deployments/fix_previleges.sh
     timeout: 300
     runas: root
   ApplicationStart:
-  - location: start_server.sh
+  - location: /home/ec2-user/deployments/start_server.sh
     timeout: 300
     runas: root
   ApplicationStop:
-  - location: stop_server.sh
+  - location: /home/ec2-user/deployments/stop_server.sh
     timeout: 300
     runas: root
