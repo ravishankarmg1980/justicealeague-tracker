@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import java.util.Arrays;
 import java.util.List;
 
+import java.net.InetAddress;
+
 /**
  * This class provides the functionality for the justice league tracker.
  *
@@ -24,8 +26,9 @@ public class JusticeLeagueServiceImpl implements JusticeLeagueService {
         return populateJusticeLeague();
     }
 
-    private List<SuperHero> populateJusticeLeague() {
-        SuperHero superMan = new SuperHero("Clark Kent_2", Arrays.asList("Flight", "Super human strength",
+    private List<SuperHero> populateJusticeLeague() throws Exception{
+		
+		SuperHero superMan = new SuperHero("Clark Kent (from "  + System.getenv("TEMP") + " )", Arrays.asList("Flight", "Super human strength",
                 "X-ray vision"), "Metropolis");
         SuperHero flash = new SuperHero("Barry Allen", Arrays.asList("Super speed",
                 "Tapping into the speed force", "Time travel"), "Central city");
