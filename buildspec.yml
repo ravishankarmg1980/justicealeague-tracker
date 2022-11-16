@@ -4,8 +4,8 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto17
-      nodejs: 16
+      java: corretto11
+      nodejs: 10
     commands:
     - echo installing maven...
     - apt-get update -y
